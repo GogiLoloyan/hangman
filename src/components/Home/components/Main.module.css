@@ -1,0 +1,129 @@
+.main {
+  height: 600px;
+}
+
+@media screen and (max-width: 950px) {
+  .main {
+    height: 400px;
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 250px solid transparent;
+  border-left: 500px solid rgb(191, 191, 34);
+  border-bottom: 250px solid transparent;
+  margin-top: 70px;
+  margin-left: 50px;
+  z-index: -5;
+}
+
+@media screen and (max-width: 950px) {
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 125px solid transparent;
+    border-left: 250px solid rgb(191, 191, 34);
+    border-bottom: 125px solid transparent;
+    margin-top: 140px;
+  }
+}
+
+.radius {
+  position: absolute;
+  right: 150px;
+  bottom:190px;
+  width: 5em;
+  height: 10em;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  background: #edcbc2;
+  transform-origin: bottom left;
+  transform: rotate(0deg);
+  transition: all 2s ease;
+}
+
+.toggle {
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+}
+
+.header_text_div {
+  position: relative;
+  margin-left: 14%;
+  --maskX: 0;
+  --maskY: 50;
+}
+
+.header_text {
+  position: relative;
+  text-align: left;
+  font-size: 75px;
+  margin-top: -400px;
+  color: #212529;
+  cursor: pointer;
+}
+
+.header_text_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 400px;
+  color: #744c62;
+  clip-path: polygon(
+    0 0,
+    calc(var(--maskX) * 1% + (var(--maskY) - 50) * 0.4%) 0,
+    calc(var(--maskX) * 1% + (var(--maskY) - 50) * -0.4%) 100%,
+    0 100%
+  );
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* @media screen and (max-width: 1190px) {
+  .header_text {
+    font-size: 60px;
+    margin-top: -400px;
+  }
+} */
+
+@media screen and (max-width: 1005px) {
+  .header_text {
+    font-size: 50px;
+    margin-top: -400px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header_text {
+    font-size: 40px;
+    margin-top: -190px;
+  }
+}
+
+.p {
+  text-align: left;
+  font-weight: lighter;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin: 50px 14% auto 14%;
+}
+
+@media screen and (max-width: 1190px) {
+  .p {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .p {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .p {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
