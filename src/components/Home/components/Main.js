@@ -24,7 +24,7 @@ class Main extends React.Component {
     }, 50);
   }
 
-  _onMouseMove = e => {
+  onMouseMove = e => {
     const width = this.refs.header_text.clientWidth;
     const height = this.refs.header_text.clientHeight;
     const oX = (e.nativeEvent.offsetX / width) * 100;
@@ -67,7 +67,7 @@ class Main extends React.Component {
           className={`wow fadeInUp ${styles.header_text_div}`}
           data-wow-duration="1.5s"
           data-wow-offset="-50"
-          onMouseMove={this._onMouseMove}
+          onMouseMove={this.onMouseMove}
           onMouseOut={this._onMouseOut}
         >
           <h1 className={`${styles.header_text}`}>Speak with<br/> Confidence</h1>

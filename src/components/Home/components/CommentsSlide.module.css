@@ -19,11 +19,26 @@
 }
 
 .info {
+  position: relative;
   width: 60%;
   display: block;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  transition: all 1.2s cubic-bezier(0.65,-0.06, 0.76, 0.43);
+}
+
+.info_prev{
+  opacity: 0;
+  
+  transition: all .8s cubic-bezier(0, 1.16, 0.6, 1.05);
+}
+
+
+.info_next{
+  opacity: 0;
+
+  transition: all .8s cubic-bezier(0, 1.16, 0.6, 1.05);
 }
 
 .slide_h1 {
@@ -46,7 +61,7 @@
 .slide_p {
   font-size: 20px;
   padding-top: 5%;
-  color: aliceblue;
+  color: #f0c0c0;
 }
 
 .slide_header {
@@ -63,6 +78,13 @@
   cursor: pointer;
 }
 
+.point {
+  fill: aliceblue;
+  stroke: aliceblue;
+  stroke-width: 0.5;
+  transition: all 1s ease-in;
+}
+
 .svg:hover .point {
   fill: rgb(104, 104, 104);
   stroke: rgb(104, 104, 104);
@@ -73,9 +95,4 @@
   transform: rotate(180deg);
 }
 
-.point {
-  fill: aliceblue;
-  stroke: aliceblue;
-  stroke-width: 0.5;
-  transition: all 1s ease-in;
-}
+

@@ -70,14 +70,14 @@
   width: 100%;
   height: 100%;
   top: -588px;
-  color: #744c62;
+  color: rgb(90, 38, 82);
   clip-path: polygon(
     0 0,
     calc(var(--maskX) * 1% + (var(--maskY) - 50) * 0.4%) 0,
     calc(var(--maskX) * 1% + (var(--maskY) - 50) * -0.4%) 100%,
     0 100%
   );
-  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 
