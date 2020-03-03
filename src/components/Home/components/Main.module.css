@@ -102,10 +102,12 @@
 } */
 
 .p {
+  position: relative;
   text-align: left;
   font-weight: lighter;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
+  top: -588px;
   margin: 50px 14% auto 14%;
 }
 

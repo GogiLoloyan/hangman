@@ -61,11 +61,12 @@ class Main extends React.Component {
           className={`wow fadeInLeft ${styles.triangle}`}
           data-wow-duration="1.5s"
           data-wow-delay=".5s"
+          
         ></div>
         <div
           className={`wow fadeInUp ${styles.header_text_div}`}
           data-wow-duration="1.5s"
-          
+          data-wow-offset="-50"
           onMouseMove={this._onMouseMove}
           onMouseOut={this._onMouseOut}
         >
